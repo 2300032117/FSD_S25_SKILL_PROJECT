@@ -2,12 +2,16 @@
   "name": "jobportal",
   "private": true,
   "version": "0.0.0",
+  "homepage":"/FSD_S25_SKILL_PROJECT/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
+    "clean":"rm -rf dist"
   },
   "dependencies": {
     "react": "^18.3.1",
